@@ -1,0 +1,37 @@
+﻿
+@model vrinda.Models.student
+@{
+    ViewBag.Title = "details";
+}
+
+<h2>details</h2>
+
+<div>
+    <h4>student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.password)
+        </dd>
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("edit","edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index2")
+</p>
+
